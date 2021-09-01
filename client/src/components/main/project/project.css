@@ -1,0 +1,19 @@
+.project {
+  text-align: center;
+}
+
+.project_bg {
+  background-color: var(--first-color);
+  padding: 3rem 1rem;
+}
+
+.project_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+  color: #fff;
+}
+
+.project_description {
+  margin-bottom: var(--mb-1-5);
+  color: #eee;
+}

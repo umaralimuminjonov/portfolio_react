@@ -1,0 +1,135 @@
+.contact_container {
+  row-gap: 3rem;
+}
+
+.contact_info {
+  display: flex;
+  margin-bottom: var(--mb-2);
+  align-items: center;
+}
+
+.contact_icon {
+  color: var(--first-color);
+  font-size: 2rem;
+  margin-right: var(--mb-0-75);
+}
+
+.contact_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact_subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.contact_input {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--body-color);
+  box-shadow: var(--shadow-effect), var(--shadow-inset-effect);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+  resize: none;
+}
+
+.contact_label {
+  position: absolute;
+  color: var(--text-color-light);
+  top: 1.95rem;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+::placeholder {
+  color: var(--text-color-light);
+  opacity: 1;
+}
+
+.contact_input:focus + .contact_label,
+.contact_input:not(:placeholder-shown) + .contact_label {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--first-color);
+  z-index: 10;
+}
+
+/* Alert */
+.contact_alert-icon {
+  color: var(--alert-color);
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.95rem;
+  right: 0.75rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact_alert-text {
+  position: absolute;
+  background-color: var(--body-color);
+  top: 0.25rem;
+  right: 3rem;
+  box-shadow: var(--shadow-effect);
+  border-radius: 0.5rem;
+  font-size: var(--normal-font-size);
+  padding: 1rem;
+  color: var(--alert-color);
+  z-index: var(--z-fixed);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact_alert-icon:hover + .contact_alert-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact_alert-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alert_close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Invalid */
+.contact_invalid .contact_alert-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact_invalid .contact_input {
+  border-color: var(--alert-color);
+}
+
+.contact_invalid .contact_label {
+  color: var(--alert-color);
+}
+
+.contact_invalid ::placeholder {
+  color: var(--alert-color);
+}

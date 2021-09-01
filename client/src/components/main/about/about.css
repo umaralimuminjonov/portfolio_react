@@ -1,0 +1,74 @@
+.about {
+  overflow: hidden;
+}
+
+.about_container {
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about_data {
+  margin-bottom: var(--mb-3);
+}
+
+.about_description {
+  margin-bottom: var(--mb-2);
+}
+
+.about_wrap {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.about_cube {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  animation: loop 16s infinite linear;
+}
+
+.about_img {
+  position: absolute;
+  opacity: 0.85;
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-color);
+  box-shadow: 0px 0px 20px 2px var(--cube-color);
+}
+
+.about_img1 {
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.about_img2 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.about_img3 {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.about_img4 {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.about_img5 {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.about_img6 {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes loop {
+  to {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}

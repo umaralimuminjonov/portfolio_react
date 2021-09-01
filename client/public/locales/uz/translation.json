@@ -1,0 +1,47 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "works": "Ishlar",
+    "services": "Xizmatlar",
+    "contact": "Aloqa"
+  },
+  "home": {
+    "title": "Salom, men UmarAliman",
+    "subtitle": "Full stack dasturchi",
+    "button": "Murojaat"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "description": "Assalomu alaykum, yoshim 19da. Hozirda talabaman. Toshkent davlat iqtisodiyot universitetida o'qiyman. <br /><br />Komputer texnologiyalarga, aniq fanlarga yoshligimdan qiziqib, shu sohani tanlaganman. Algoritm topshiriqlar yechishni, css battledagi topshiriqlarni yechishni yoqtiraman. <br /><br />Hozirda frilanser, web dasturchi va talabaman",
+    "button": "Resume"
+  },
+  "project": {
+    "title": "Sizda yangi loyiha bormi?",
+    "description": "Hoziroq menga murojaat qiling. Birgalikda bu loyihani amalga oshiramiz.",
+    "button": "Murojaat"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "contactInfos": {
+      "tel": "Telefon raqam",
+      "email": "Elektron pochta",
+      "map": { "title": "Manzil", "loc": "Bekobod, Toshkent vil." }
+    },
+    "labels": {
+      "fname": "Ismingiz",
+      "tel": "Telefon raqam",
+      "text": "Xabar"
+    },
+    "errors": {
+      "fname": "Ism kiriting",
+      "tel": {
+        "empty": "Telefon raqam kiriting",
+        "invalid": "To'g'ri telefon raqam kiriting",
+        "length": "To'g'ri uzunlikdagi telefon raqam kiriting"
+      },
+      "msg": "Xabar yozing"
+    },
+    "button": "Yuborish"
+  }
+}

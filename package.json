@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umarali-m/portfolio_react.git"
+  },
+  "author": "UmarAli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umarali-m/portfolio_react/issues"
+  },
+  "homepage": "https://github.com/umarali-m/portfolio_react#readme",
+  "dependencies": {
+    "cloudinary": "^1.26.3",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "mongoose": "^6.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}

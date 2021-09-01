@@ -1,0 +1,47 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi I'm UmarAli",
+    "subtitle": "Full stack developer",
+    "button": "Contact"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Hello, I am 19 years old. I am currently a student. I study at the Tashkent State University of Economics. <br /><br />I have been interested in computer technology and exact sciences since I was young and I chose this field. I like solving algorithm tasks, solving tasks in css battle. <br /><br />Currently a freelancer, web programmer and student.",
+    "button": "Download CV"
+  },
+  "project": {
+    "title": "Do you have a new project?",
+    "description": "Contact me now. Together we will implement this project.",
+    "button": "Contact me"
+  },
+  "contact": {
+    "title": "Contact",
+    "contactInfos": {
+      "tel": "Phone number",
+      "email": "Email",
+      "map": { "title": "Location", "loc": "Bekabad, Tashkent" }
+    },
+    "labels": {
+      "fname": "First name",
+      "tel": "Phone number",
+      "text": "Message"
+    },
+    "errors": {
+      "fname": "First name is required",
+      "tel": {
+        "empty": "Phone number is required",
+        "invalid": "Enter the correct phone number",
+        "length": "Enter the correct length phone number"
+      },
+      "msg": "Message is required"
+    },
+    "button": "Send"
+  }
+}
