@@ -76,9 +76,9 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: #135ba3;
-  --first-color-second: #11304f;
-  --first-color-alt: #2669b1;
+  --first-color: #40c2c9;
+  --first-color-second: #364f6b;
+  --first-color-alt: #70d1d7;
   --first-color-lighter: #b6d9fc;
   --title-color: #98a5b3;
   --text-color: #6a737c;
