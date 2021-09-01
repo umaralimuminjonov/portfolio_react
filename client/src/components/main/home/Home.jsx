@@ -19,9 +19,9 @@ function Home() {
             <h4 className="home_subtitle">
               <Trans i18nKey="home.subtitle">Full stack developer</Trans>
             </h4>
-            <Link to="#contact" className="btn btn_home">
+            <a href="#contact" className="btn btn_home">
               <Trans i18nKey="home.button">Contact</Trans>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
