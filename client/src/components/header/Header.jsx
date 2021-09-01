@@ -6,9 +6,13 @@ import NavList from "./utils/NavList";
 
 function Header() {
   const { i18n } = useTranslation();
+  const [language, setLanguage] = useState("Eng");
+  const [languageShow, setLanguageShow] = useState(false);
 
-  const changeLanguage = (language) => {
+  const changeLanguage = (language, e) => {
     i18n.changeLanguage(language);
+    setLanguageShow(!languageShow);
+    setLanguage(e.target.innerText);
   };
 
   const [menu, setMenu] = useState(false);
@@ -33,18 +37,40 @@ function Header() {
         </div>
 
         <div className="nav_btns">
-          <select className="nav_select icon">
-            <option onClick={() => changeLanguage("en")} className="nav_option">
-              Eng
-            </option>
-            <option onClick={() => changeLanguage("ru")} className="nav_option">
-              Rus
-            </option>
-            <option onClick={() => changeLanguage("uz")} className="nav_option">
-              Uzb
-            </option>
-          </select>
-          <UilMoon onClick={() => changeTheme()} className="change-theme icon" />
+          <div className="nav_select">
+            <h4
+              className="nav_selected"
+              onClick={() => setLanguageShow(!languageShow)}
+            >
+              {language}
+            </h4>
+            <div
+              className={`nav_options ${languageShow && "nav_options-show"}`}
+            >
+              <h4
+                onClick={(e) => changeLanguage("en", e)}
+                className="nav_option"
+              >
+                Eng
+              </h4>
+              <h4
+                onClick={(e) => changeLanguage("ru", e)}
+                className="nav_option"
+              >
+                Rus
+              </h4>
+              <h4
+                onClick={(e) => changeLanguage("uz", e)}
+                className="nav_option"
+              >
+                Uzb
+              </h4>
+            </div>
+          </div>
+          <UilMoon
+            onClick={() => changeTheme()}
+            className="change-theme icon"
+          />
           <UilListUiAlt
             className="nav_toggle icon"
             onClick={() => setMenu(!menu)}
