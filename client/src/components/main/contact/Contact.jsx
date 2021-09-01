@@ -7,7 +7,7 @@ function Contact() {
   useTranslation();
 
   function submitForm() {
-    console.log();
+    console.log("Send");
   }
 
   return (
