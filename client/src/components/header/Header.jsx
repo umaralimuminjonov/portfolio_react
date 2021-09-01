@@ -1,18 +1,17 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { UilListUiAlt, UilMoon, UilTimes } from "@iconscout/react-unicons";
 import { useTranslation } from "react-i18next";
 import NavList from "./utils/NavList";
 
 function Header() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
   const [menu, setMenu] = useState(false);
-  const [theme, setTheme] = useState(false);
 
   const changeTheme = () => {
     document.body.classList.toggle("dark-theme");
