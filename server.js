@@ -26,6 +26,14 @@ app.use("/api", require("./routes/messageRouter"));
 app.use("/api", require("./routes/workRouter"));
 app.use("/api", require("./routes/upload"));
 
+if (process.env.NODE_ENV === "production") {
+  app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
+
 const start = async () => {
   try {
     await mongoose.connect(URI, {
@@ -39,11 +47,6 @@ const start = async () => {
   }
 };
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  });
-}
+
 
 start();
