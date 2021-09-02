@@ -43,5 +43,17 @@
       "msg": "Message is required"
     },
     "button": "Send"
+  },
+  "alert": {
+    "success": {
+      "title": "Woo hoo!",
+      "data": "Your message was send. I will contact you.",
+      "button": "Continue"
+    },
+    "wrong": {
+      "title": "Uh oh.",
+      "data": "Something wierd happened. Keep calm and try again.",
+      "button": "Try again"
+    }
   }
 }

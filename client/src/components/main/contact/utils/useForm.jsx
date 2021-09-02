@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const useForm = (callback, validate) => {
+const useForm = (validate) => {
   const [values, setValues] = useState({
     fname: "",
     tel: "",
@@ -19,14 +20,29 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setErrors(validate(values));
     setIsSubmitting(true);
   };
 
+  const sendMsg = async () => {
+    try {
+      await axios.post("/api/message", { ...values });
+      
+      setValues({
+        fname: "",
+        tel: "",
+        text: "",
+      });
+
+      document.getElementById("alert-success").style.display = "flex";
+    } catch (err) {
+      document.getElementById("alert-wrong").style.display = "flex";
+    }
+  };
+
   useEffect(() => {
-    if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
+    if (Object.values(errors).every((o) => o === "") && isSubmitting) {
+      sendMsg();
     }
   }, [errors]);
 

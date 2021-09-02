@@ -17,6 +17,7 @@
   --body-color-alt: #dde0e3;
   --cube-color: rgba(19, 91, 163, 0.15);
   --alert-color: #d32727;
+  --alert-color-lighter: #efb7b7;
   --container-color: #fff;
   --scroll-bar-color: #bec7cf;
   --scroll-thumb-color: #909aa3;
@@ -86,6 +87,7 @@ body.dark-theme {
   --body-color: #141414;
   --body-color-alt: #161616;
   --alert-color: #d32727;
+  --alert-color-lighter: #efb7b7;
   --container-color: #141414;
   --scroll-bar-color: #465361;
   --scroll-thumb-color: #2b333b;
@@ -213,13 +215,15 @@ ul {
   transition: 0.3s;
 }
 
-.btn_home {
+.btn_home,
+.btn_success {
   background: var(--first-color);
   color: #eeeeee;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn_home:hover {
+.btn_home:hover,
+.btn_success:hover {
   background: var(--first-color-alt);
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
@@ -252,6 +256,12 @@ ul {
 
 .btn:hover .btn_moving {
   transform: translateX(0.3rem);
+}
+
+.btn_wrong {
+  color: #eeeeee;
+  background-color: var(--alert-color);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*==================== HEADER ====================*/
@@ -340,6 +350,8 @@ ul {
   .header {
     top: 0;
     bottom: initial;
+    background-color: var(--body-color);
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.2);
   }
 
   .header,
@@ -361,7 +373,8 @@ ul {
     column-gap: 2rem;
   }
   .nav_options {
-    bottom: -8rem;
+    top: 2rem;
+    bottom: initial;
   }
   .nav_close {
     display: none;

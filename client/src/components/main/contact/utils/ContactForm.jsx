@@ -3,14 +3,13 @@ import { UilQuestionCircle, UilMessage } from "@iconscout/react-unicons";
 import useForm from "./useForm";
 import validate from "./validateInfo";
 import { Trans, useTranslation } from "react-i18next";
+import AlertWrong from "./AlertWrong";
+import AlertSuccess from "./AlertSuccess";
 
-function ContactForm({ submitForm }) {
+function ContactForm() {
   useTranslation();
 
-  const { handleChange, handleSubmit, values, errors } = useForm(
-    submitForm,
-    validate
-  );
+  const { handleChange, handleSubmit, values, errors } = useForm(validate);
 
   return (
     <form onSubmit={handleSubmit} className="contact_form grid" noValidate>
@@ -86,6 +85,8 @@ function ContactForm({ submitForm }) {
           <UilMessage className="btn_icon btn_moving" />
         </button>
       </div>
+      <AlertWrong />
+      <AlertSuccess />
     </form>
   );
 }

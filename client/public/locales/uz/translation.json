@@ -43,5 +43,17 @@
       "msg": "Xabar yozing"
     },
     "button": "Yuborish"
+  },
+  "alert": {
+    "success": {
+      "title": "Yu huu!",
+      "data": "Sizning xabaringiz yuborildi. Siz bilan albatta bog'lanaman.",
+      "button": "Davom etish"
+    },
+    "wrong": {
+      "title": "Uh ah.",
+      "data": "Xatolik yuz berdi. Qaytadan urinib ko'ring.",
+      "button": "Qaytadan urinish"
+    }
   }
 }

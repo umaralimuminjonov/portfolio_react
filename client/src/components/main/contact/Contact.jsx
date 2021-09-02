@@ -6,10 +6,6 @@ import ContactForm from "./utils/ContactForm";
 function Contact() {
   useTranslation();
 
-  function submitForm() {
-    console.log("Send");
-  }
-
   return (
     <section className="contact section" id="contact">
       <h1 className="section_title">
@@ -19,7 +15,7 @@ function Contact() {
       <div className="contact_container container grid">
         <ContactInfos />
 
-        <ContactForm submitForm={submitForm} />
+        <ContactForm />
       </div>
     </section>
   );
