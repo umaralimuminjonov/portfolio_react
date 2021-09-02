@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { UilListUiAlt, UilMoon, UilTimes } from "@iconscout/react-unicons";
+import {
+  UilListUiAlt,
+  UilMoon,
+  UilTimes,
+  UilSun,
+} from "@iconscout/react-unicons";
 import { useTranslation } from "react-i18next";
 import NavList from "./utils/NavList";
 
 function Header() {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState("Eng");
+  const [isDark, setIsDark] = useState(false);
 
   const changeLanguage = (language, e) => {
     i18n.changeLanguage(language);
@@ -17,6 +23,7 @@ function Header() {
 
   const changeTheme = () => {
     document.body.classList.toggle("dark-theme");
+    setIsDark(!isDark);
   };
 
   const styleMenu = {
@@ -71,10 +78,10 @@ function Header() {
               </h4>
             </div>
           </div>
-          <UilMoon
-            onClick={() => changeTheme()}
-            className="change-theme icon"
-          />
+          <div onClick={() => changeTheme()} className="change-theme">
+            {isDark ? <UilSun className="icon" /> : <UilMoon className="icon" />}
+          </div>
+
           <UilListUiAlt
             className="nav_toggle icon"
             onClick={() => setMenu(!menu)}

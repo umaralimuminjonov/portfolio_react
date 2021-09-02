@@ -16,6 +16,25 @@
     "description": "Assalomu alaykum, yoshim 19da. Hozirda talabaman. Toshkent davlat iqtisodiyot universitetida o'qiyman. <br /><br />Komputer texnologiyalarga, aniq fanlarga yoshligimdan qiziqib, shu sohani tanlaganman. Algoritm topshiriqlar yechishni, css battledagi topshiriqlarni yechishni yoqtiraman. <br /><br />Hozirda frilanser, web dasturchi va talabaman",
     "button": "Resume"
   },
+  "works": {
+    "1": {
+      "title": "AIMS' Group",
+      "description": "AIMS' group kompaniyasi uchun portfolio sayt."
+    },
+    "2": {
+      "title": "Ecommerce",
+      "description": "Harid qilish uchun web sayt. Admin paneli bilan, o'rganishga oson qulay."
+    },
+    "3": {
+      "title": "QR yasovchi",
+      "description": "QR code yasab olish uchun juda sodda qulay web sayt."
+    },
+    "4": {
+      "title": "Birinchi sayt",
+      "description": "Meni birinchi yasagan web saytim juda sodda. Ko'proq dizaynga e'tibor berilgan."
+    },
+    "link": "Ko'rish"
+  },
   "project": {
     "title": "Sizda yangi loyiha bormi?",
     "description": "Hoziroq menga murojaat qiling. Birgalikda bu loyihani amalga oshiramiz.",

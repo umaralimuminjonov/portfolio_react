@@ -273,6 +273,9 @@ ul {
 /*==================== ABOUT ====================*/
 @import url("./components/main/about/about.css");
 
+/*==================== WORKS ====================*/
+@import url("./components/main/works/works.css");
+
 /*==================== PROJECT ====================*/
 @import url("./components/main/project/project.css");
 
@@ -324,6 +327,7 @@ ul {
     justify-self: center;
   }
 
+  .works_contents,
   .contact_container,
   .footer_container {
     grid-template-columns: repeat(2, 1fr);
@@ -400,6 +404,10 @@ ul {
   }
   .about_button {
     justify-content: initial;
+  }
+
+  .works_contents {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .project {

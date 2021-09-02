@@ -16,6 +16,25 @@
     "description": "Hello, I am 19 years old. I am currently a student. I study at the Tashkent State University of Economics. <br /><br />I have been interested in computer technology and exact sciences since I was young and I chose this field. I like solving algorithm tasks, solving tasks in css battle. <br /><br />Currently a freelancer, web programmer and student.",
     "button": "Download CV"
   },
+  "works": {
+    "1": {
+      "title": "AIMS' Group",
+      "description": "Portfolio site for AIMS 'group."
+    },
+    "2": {
+      "title": "Ecommerce",
+      "description": "Shopping site. It's easy to learn with the admin panel."
+    },
+    "3": {
+      "title": "QR maker",
+      "description": "A very simple and convenient website for generating a QR code."
+    },
+    "4": {
+      "title": "My first site",
+      "description": "The site that made me first is very simple. More attention is paid to design."
+    },
+    "link": "View"
+  },
   "project": {
     "title": "Do you have a new project?",
     "description": "Contact me now. Together we will implement this project.",

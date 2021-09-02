@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeSocial(props) {
   return (
-    <a href={props.href} target="_blank" className="home_social-icon icon" rel="noreferrer">
+    <a href={props.href} className="home_social-icon icon" target="_blank" rel="noreferrer">
       {props.icon}
     </a>
   );

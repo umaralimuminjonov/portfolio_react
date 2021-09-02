@@ -15,14 +15,14 @@ export const contactInfos = [
   {
     title: "Email",
     subtitle: "umaralimuminjonov@gmail.com",
-    href: "email:umaralimuminjonov@gmail.com",
+    href: "mailto:umaralimuminjonov@gmail.com",
     icon: <UilEnvelope className="contact_icon" />,
     trans: "email",
   },
   {
     title: "Location",
     subtitle: "Bekabad, Tashkent",
-    href: "map:98909042201",
+    href: "https://www.google.com/maps/@40.2134892,69.2623036,16.25z",
     icon: <UilMapMarker className="contact_icon" />,
     trans: "map.title",
   },

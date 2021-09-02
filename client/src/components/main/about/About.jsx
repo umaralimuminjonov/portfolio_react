@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { UilImport } from "@iconscout/react-unicons";
 import { Trans, useTranslation } from "react-i18next";
 import aboutImg1 from "./img/about_img1.svg";
@@ -28,10 +27,10 @@ function About() {
             </Trans>
           </p>
           <div className="btn_about">
-            <Link className="btn btn_flex">
+            <a href="./pdf/UmarAli-cv.pdf" className="btn btn_flex">
               <Trans i18nKey="about.button">Download CV</Trans>
               <UilImport className="btn_icon" />
-            </Link>
+            </a>
           </div>
         </div>
 
