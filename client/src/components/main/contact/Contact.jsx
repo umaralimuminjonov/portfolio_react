@@ -7,15 +7,15 @@ import ripplet from "ripplet.js";
 function Contact() {
   document
     .querySelectorAll(".btn")
-    .forEach((btn) => btn.addEventListener("mousedown", ripplet));
+    .forEach((btn) => btn.addEventListener("click", ripplet));
 
   document
     .querySelectorAll(".icon")
-    .forEach((icon) => icon.addEventListener("mousedown", ripplet));
+    .forEach((icon) => icon.addEventListener("click", ripplet));
 
   document
     .querySelectorAll(".rpl")
-    .forEach((rpl) => rpl.addEventListener("mousedown", ripplet));
+    .forEach((rpl) => rpl.addEventListener("click", ripplet));
 
   return (
     <section className="contact section" id="contact">

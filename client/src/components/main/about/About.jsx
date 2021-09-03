@@ -8,20 +8,13 @@ import aboutImg4 from "./img/about_img4.svg";
 import aboutImg5 from "./img/about_img5.svg";
 import aboutImg6 from "./img/about_img6.svg";
 import cv from "./pdf/UmarAli-cv.pdf";
-import { Bounce } from "react-reveal";
-import ripplet from "ripplet.js";
 
 function About() {
-  document
-    .querySelectorAll(".btn")
-    .forEach((btn) => btn.addEventListener("pointerdown", ripplet));
   return (
     <section className="about section" id="about">
-      <Bounce left>
-        <h1 className="section_title">
-          <Trans i18nKey="about.title">About me</Trans>
-        </h1>
-      </Bounce>
+      <h1 className="section_title">
+        <Trans i18nKey="about.title">About me</Trans>
+      </h1>
       <h1 className="bg-text">About</h1>
       <div className="about_container container grid">
         <div className="about_data">

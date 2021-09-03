@@ -1,7 +1,6 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import HomeSocials from "./utils/HomeSocials";
-import { Zoom, Flip } from "react-reveal";
 
 function Home() {
   return (
@@ -16,11 +15,9 @@ function Home() {
           <HomeSocials />
           <img src="" alt="" className="home_img" />
           <div className="home_data">
-            <Flip top>
-              <h1 className="home_title">
-                <Trans i18nKey="home.title">Hi I'm UmarAli</Trans>
-              </h1>
-            </Flip>
+            <h1 className="home_title">
+              <Trans i18nKey="home.title">Hi I'm UmarAli</Trans>
+            </h1>
             <h4 className="home_subtitle">
               <Trans i18nKey="home.subtitle">Full stack developer</Trans>
             </h4>
