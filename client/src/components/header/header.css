@@ -107,6 +107,11 @@
   gap: 3rem;
 }
 
+.nav_item {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
 .nav_link {
   display: flex;
   align-items: center;

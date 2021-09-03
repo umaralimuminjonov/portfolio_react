@@ -56,30 +56,34 @@ function Header() {
 
         <div className="nav_btns">
           <div className="nav_select">
-            <a className="nav_selected">{language}</a>
+            <a className="nav_selected icon">{language}</a>
             <div className="nav_options">
               <h4
                 onClick={(e) => changeLanguage("en", e)}
-                className="nav_option"
+                className="nav_option rpl"
               >
                 Eng
               </h4>
               <h4
                 onClick={(e) => changeLanguage("ru", e)}
-                className="nav_option"
+                className="nav_option rpl"
               >
                 Rus
               </h4>
               <h4
                 onClick={(e) => changeLanguage("uz", e)}
-                className="nav_option"
+                className="nav_option rpl"
               >
                 Uzb
               </h4>
             </div>
           </div>
           <div onClick={() => changeTheme()} className="change-theme">
-            {isDark ? <UilSun className="icon" /> : <UilMoon className="icon" />}
+            {isDark ? (
+              <UilSun className="icon" />
+            ) : (
+              <UilMoon className="icon" />
+            )}
           </div>
 
           <UilListUiAlt
