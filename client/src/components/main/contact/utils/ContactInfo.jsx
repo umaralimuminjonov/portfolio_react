@@ -1,8 +1,7 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function ContactInfo(props) {
-  useTranslation();
   return (
     <div className="contact_info">
       {props.icon}

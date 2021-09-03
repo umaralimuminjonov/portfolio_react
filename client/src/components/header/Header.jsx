@@ -56,7 +56,7 @@ function Header() {
 
         <div className="nav_btns">
           <div className="nav_select">
-            <h4 className="nav_selected">{language}</h4>
+            <a className="nav_selected">{language}</a>
             <div className="nav_options">
               <h4
                 onClick={(e) => changeLanguage("en", e)}

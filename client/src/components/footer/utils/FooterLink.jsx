@@ -1,8 +1,7 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function FooterLink(props) {
-  useTranslation()
   return (
     <li>
       <a href={"#" + props.title.toLowerCase()} className="footer_link">

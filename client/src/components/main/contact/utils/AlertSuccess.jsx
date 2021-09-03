@@ -29,7 +29,7 @@ function AlertSuccess() {
               </Trans>
             </p>
           </div>
-          <a onClick={() => alertHide()} href="#" className="btn btn_success">
+          <a onClick={() => alertHide()} href="#home" className="btn btn_success">
             <Trans i18nKey="alert.success.button">Continue</Trans>
           </a>
         </div>

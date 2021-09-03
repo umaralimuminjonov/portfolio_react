@@ -1,20 +1,21 @@
 import React from "react";
 import { UilImport } from "@iconscout/react-unicons";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import aboutImg1 from "./img/about_img1.svg";
 import aboutImg2 from "./img/about_img2.svg";
 import aboutImg3 from "./img/about_img3.svg";
 import aboutImg4 from "./img/about_img4.svg";
 import aboutImg5 from "./img/about_img5.svg";
 import aboutImg6 from "./img/about_img6.svg";
+import cv from "./pdf/UmarAli-cv.pdf";
 
 function About() {
-  useTranslation();
   return (
     <section className="about section" id="about">
       <h1 className="section_title">
         <Trans i18nKey="about.title">About me</Trans>
       </h1>
+      <h1 className="bg-text">About</h1>
       <div className="about_container container grid">
         <div className="about_data">
           <p className="about_description">
@@ -27,7 +28,7 @@ function About() {
             </Trans>
           </p>
           <div className="btn_about">
-            <a href="./pdf/UmarAli-cv.pdf" className="btn btn_flex">
+            <a download="" href={cv} className="btn btn_flex">
               <Trans i18nKey="about.button">Download CV</Trans>
               <UilImport className="btn_icon" />
             </a>

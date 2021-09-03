@@ -78,10 +78,6 @@
   opacity: 1;
 }
 
-.nav_option {
-  cursor: pointer;
-}
-
 .nav_toggle,
 .change-theme {
   cursor: pointer;

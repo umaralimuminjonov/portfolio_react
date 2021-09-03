@@ -1,12 +1,11 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import HomeSocials from "./utils/HomeSocials";
 
 function Home() {
-  useTranslation();
-
   return (
     <section className="home section" id="home">
+      <h1 className="bg-text">Umar<br />Ali</h1>
       <div className="home_container container grid">
         <div className="home_content grid">
           <HomeSocials />

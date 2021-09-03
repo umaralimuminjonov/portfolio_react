@@ -2,13 +2,11 @@ import React from "react";
 import { UilQuestionCircle, UilMessage } from "@iconscout/react-unicons";
 import useForm from "./useForm";
 import validate from "./validateInfo";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import AlertWrong from "./AlertWrong";
 import AlertSuccess from "./AlertSuccess";
 
 function ContactForm() {
-  useTranslation();
-
   const { handleChange, handleSubmit, values, errors } = useForm(validate);
 
   return (

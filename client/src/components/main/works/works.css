@@ -6,7 +6,8 @@
   background: var(--body-color);
   box-shadow: var(--shadow-effect);
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  min-height: 368px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;

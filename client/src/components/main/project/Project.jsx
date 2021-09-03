@@ -1,9 +1,8 @@
 import React from "react";
 import { UilMessage } from "@iconscout/react-unicons";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function Project() {
-  useTranslation();
   return (
     <section className="project section">
       <div className="project_bg">

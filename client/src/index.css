@@ -1,5 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -13,6 +14,7 @@
   --title-color: #232629;
   --text-color: #6a737c;
   --text-color-light: #9fa6ad;
+  --bg-text-color: rgba(200, 200, 200, 0.12);
   --body-color: #eeeeee;
   --body-color-alt: #dde0e3;
   --cube-color: rgba(19, 91, 163, 0.15);
@@ -33,6 +35,7 @@
   /*========== Font and typography ==========*/
   --body-font: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+  --bg-text-font: "Oswald", "Segoe UI", Tahoma, Verdana, sans-serif;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -84,6 +87,7 @@ body.dark-theme {
   --title-color: #98a5b3;
   --text-color: #6a737c;
   --text-color-light: #9fa6ad;
+  --bg-text-color: rgba(40, 40, 40, 0.1);
   --body-color: #141414;
   --body-color-alt: #161616;
   --alert-color: #d32727;
@@ -155,7 +159,9 @@ ul {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
+  position: relative;
   padding: 2rem 0 4rem;
+  overflow: hidden;
 }
 
 .section_title {
@@ -183,11 +189,29 @@ ul {
   max-width: 896px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+  z-index: var(--z-tooltip);
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/*==================== BACKGROUND TEXT ====================*/
+.bg-text {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  color: var(--bg-text-color);
+  text-transform: uppercase;
+  font-size: 35vw;
+  font-family: var(--bg-text-font);
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.bg-text:nth-child(2) {
+  top: 60%;
 }
 
 /*==================== BUTTONS ====================*/

@@ -1,9 +1,8 @@
 import React from "react";
 import { UilArrowRight } from "@iconscout/react-unicons";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function WorksContent(props) {
-  useTranslation();
   return (
     <div className="works_content">
       <img src={props.img} alt="" className="works_img" />
