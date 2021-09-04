@@ -5,8 +5,8 @@ import HomeSocial from "./HomeSocial";
 function HomeSocials() {
   return (
     <div className="home_social">
-      {homeSocials.map((social) => (
-        <HomeSocial href={social.href} icon={social.icon} />
+      {homeSocials.map((social, i) => (
+        <HomeSocial href={social.href} icon={social.icon} delay={i} />
       ))}
     </div>
   );

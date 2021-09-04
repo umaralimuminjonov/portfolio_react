@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const messageCtrl = require("../controllers/messageCtrl");
+const admin = require("../middlewares/admin")
 
 router
   .route("/message")
-  .get(messageCtrl.getMessages)
+  .get(admin, messageCtrl.getMessages)
   .post(messageCtrl.newMessage);
 
 router

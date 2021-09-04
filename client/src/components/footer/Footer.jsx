@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer_bg">
         <div className="footer_container container grid">
-          <h1 className="footer_title">UmarAli</h1>
+          <h1 data-aos="fade-right" className="footer_title">UmarAli</h1>
           <FooterLinks />
           <FooterSocials />
         </div>

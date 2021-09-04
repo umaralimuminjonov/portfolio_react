@@ -3,7 +3,7 @@ import { Trans } from "react-i18next";
 
 function FooterLink(props) {
   return (
-    <li>
+    <li data-aos="fade-right">
       <a href={"#" + props.title.toLowerCase()} className="footer_link">
         <Trans i18nKey={"header." + props.title.toLowerCase()}>{props.title}</Trans>
       </a>

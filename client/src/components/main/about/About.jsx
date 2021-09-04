@@ -12,13 +12,15 @@ import cv from "./pdf/UmarAli-cv.pdf";
 function About() {
   return (
     <section className="about section" id="about">
-      <h1 className="section_title">
+      <h1 data-aos="fade-right" className="section_title">
         <Trans i18nKey="about.title">About me</Trans>
       </h1>
-      <h1 className="bg-text">About</h1>
+      <div className="section_bg">
+        <h1 className="bg-text">About</h1>
+      </div>
       <div className="about_container container grid">
         <div className="about_data">
-          <p className="about_description">
+          <p data-aos="fade-right" className="about_description">
             <Trans i18nKey="about.description">
               Hello, I am 19 years old. I am currently a student. I study at the
               Tashkent State University of Economics. I have been interested in
@@ -27,7 +29,7 @@ function About() {
               css battle. Currently a freelancer, web programmer and student.
             </Trans>
           </p>
-          <div className="btn_about">
+          <div data-aos="zoom-in" className="btn_about">
             <a download="" href={cv} className="btn btn_flex">
               <Trans i18nKey="about.button">Download CV</Trans>
               <UilImport className="btn_icon" />

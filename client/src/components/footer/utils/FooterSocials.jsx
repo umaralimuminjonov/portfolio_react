@@ -5,8 +5,8 @@ import FooterSocial from "./FooterSocial";
 function FooterSocials() {
   return (
     <div className="footer_socials">
-      {footerSocials.map((social) => (
-        <FooterSocial href={social.href} icon={social.icon} />
+      {footerSocials.map((social, i) => (
+        <FooterSocial href={social.href} icon={social.icon} delay={i} />
       ))}
     </div>
   );

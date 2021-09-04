@@ -22,7 +22,9 @@ function Contact() {
       <h1 className="section_title">
         <Trans i18nKey="contact.title">Contact</Trans>
       </h1>
-      <h1 className="bg-text">Contact</h1>
+      <div className="section_bg">
+        <h1 className="bg-text">Contact</h1>
+      </div>
       <div className="contact_container container grid">
         <ContactInfos />
 

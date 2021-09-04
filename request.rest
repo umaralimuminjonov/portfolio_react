@@ -1,0 +1,11 @@
+POST http://localhost:7000/auth/register
+content-type: application/json
+
+{
+  "email": "umaralimuminjonov@gmail.com",
+  "password": "Umar24Ali12Portfolio"
+}
+
+###
+
+GET http://localhost:7000/auth/logout

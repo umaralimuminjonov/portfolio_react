@@ -22,6 +22,7 @@ app.use(
 );
 
 // Routes
+app.use("/auth", require("./routes/adminRouter"));
 app.use("/api", require("./routes/messageRouter"));
 app.use("/api", require("./routes/workRouter"));
 app.use("/api", require("./routes/upload"));
