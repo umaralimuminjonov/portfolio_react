@@ -12,10 +12,7 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="contact_form grid" noValidate>
       <div className="contact_inputs grid">
-        <div
-          data-aos="zoom-in"
-          className={`contact_content ${errors.fname && "contact_invalid"}`}
-        >
+        <div className={`contact_content ${errors.fname && "contact_invalid"}`}>
           <input
             type="text"
             className="contact_input"
@@ -35,10 +32,7 @@ function ContactForm() {
             )}
           </div>
         </div>
-        <div
-          data-aos="zoom-in"
-          className={`contact_content ${errors.tel && "contact_invalid"}`}
-        >
+        <div className={`contact_content ${errors.tel && "contact_invalid"}`}>
           <input
             type="tel"
             className="contact_input"
@@ -61,10 +55,7 @@ function ContactForm() {
           </div>
         </div>
       </div>
-      <div
-        data-aos="zoom-in"
-        class={`contact_content ${errors.text && "contact_invalid"}`}
-      >
+      <div class={`contact_content ${errors.text && "contact_invalid"}`}>
         <textarea
           cols="0"
           rows="7"

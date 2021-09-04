@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./home/Home";
 import About from "./about/About";
+import Services from "./services/Services";
 import Works from "./works/Works";
 import Project from "./project/Project";
 import Contact from "./contact/Contact";
@@ -33,6 +34,7 @@ function Main() {
     <main className="main">
       <Home />
       <About />
+      <Services />
       <Works />
       <Project />
       <Contact />

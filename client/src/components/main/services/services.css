@@ -1,0 +1,41 @@
+.services_contents {
+  position: relative;
+  height: 50vh;
+}
+
+.services_circle {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  animation: circleX 13s linear infinite alternate;
+  margin: 3rem auto;
+}
+
+.services_box {
+  background: var(--body-color);
+  box-shadow: var(--shadow-effect);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  padding: 1.5rem;
+  animation: circleY 7s linear infinite alternate;
+}
+
+.services_img {
+  width: 100%;
+}
+
+@keyframes circleX {
+  100% {
+    transform: translateX(calc(50vw - 80px));
+  }
+}
+
+@keyframes circleY {
+  100% {
+    transform: translateY(calc(50vh - 80px));
+  }
+}

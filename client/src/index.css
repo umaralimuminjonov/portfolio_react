@@ -309,6 +309,9 @@ ul {
 /*==================== ABOUT ====================*/
 @import url("./components/main/about/about.css");
 
+/*==================== SERVICES ====================*/
+@import url("./components/main/services/services.css");
+
 /*==================== WORKS ====================*/
 @import url("./components/main/works/works.css");
 

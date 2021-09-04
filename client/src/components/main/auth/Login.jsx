@@ -1,12 +1,10 @@
 import React from "react";
 import {
   UilQuestionCircle,
-  UilMessage,
   UilArrowLeft,
 } from "@iconscout/react-unicons";
 import useForm from "./utils/useForm";
 import validate from "./utils/validateInfo";
-import { Trans } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function Login() {

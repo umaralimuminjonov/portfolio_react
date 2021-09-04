@@ -1,5 +1,6 @@
 import React from "react";
 import { Trans } from "react-i18next";
+import ServicesContents from "./utils/ServicesContents";
 
 function Services() {
   return (
@@ -7,7 +8,9 @@ function Services() {
       <h1 className="section_title">
         <Trans i18nKey="services.title">Services</Trans>
       </h1>
-      <div className="services_container container"></div>
+      <div className="services_container container">
+        <ServicesContents />
+      </div>
     </section>
   );
 }
