@@ -10,9 +10,6 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  height: 80px;
-  width: 100%;
-  margin: 3rem auto;
 }
 
 .services_box {
