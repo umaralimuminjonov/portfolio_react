@@ -19,7 +19,7 @@ export const worksData = [
     title: "QR maker",
     description:
       "A very simple and convenient website for generating a QR code.",
-    href: "http://qrcode-ua.herokuapp.com",
+    href: "http://ua-qrcode.herokuapp.com",
   },
   {
     id: 4,
