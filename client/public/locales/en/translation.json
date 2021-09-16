@@ -15,6 +15,9 @@
     "description": "Hello, I am 19 years old. I am currently a student. I study at the Tashkent State University of Economics. <br /><br />I have been interested in computer technology and exact sciences since I was young and I chose this field. I like solving algorithm tasks, solving tasks in css battle. <br /><br />Currently a freelancer, web programmer and student.",
     "button": "Download CV"
   },
+  "services": {
+    "title": "Services"
+  },
   "works": {
     "title": "Works",
     "1": {

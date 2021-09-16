@@ -27,7 +27,7 @@ function Header() {
   };
 
   const styleMenu = {
-    bottom: menu ? 0 : "-100%",
+    bottom: menu ? 0 : "-200%",
   };
 
   const [scrollHeader, setScrollHeader] = useState(false);

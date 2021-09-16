@@ -1,13 +1,17 @@
 .services_contents {
   position: relative;
-  height: 50vh;
+  min-height: 50vh;
 }
 
-.services_circle {
+.services_container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   height: 80px;
-  width: 80px;
-  animation: circleX 13s linear infinite alternate;
+  width: 100%;
   margin: 3rem auto;
 }
 
@@ -20,22 +24,17 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  padding: 1.5rem;
-  animation: circleY 7s linear infinite alternate;
+  padding: 1.25rem;
+  animation: blub 1s infinite alternate;
 }
 
 .services_img {
   width: 100%;
 }
 
-@keyframes circleX {
+@keyframes blub {
   100% {
-    transform: translateX(calc(50vw - 80px));
-  }
-}
-
-@keyframes circleY {
-  100% {
-    transform: translateY(calc(50vh - 80px));
+    fill: #ddd;
+    box-shadow: none;
   }
 }

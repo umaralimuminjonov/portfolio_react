@@ -14,7 +14,10 @@
   "about": {
     "title": "Men haqimda",
     "description": "Assalomu alaykum, yoshim 19da. Hozirda talabaman. Toshkent davlat iqtisodiyot universitetida o'qiyman. <br /><br />Komputer texnologiyalarga, aniq fanlarga yoshligimdan qiziqib, shu sohani tanlaganman. Algoritm topshiriqlar yechishni, css battledagi topshiriqlarni yechishni yoqtiraman. <br /><br />Hozirda frilanser, web dasturchi va talabaman",
-    "button": "Resume"
+    "button": "Rezyume"
+  },
+  "services": {
+    "title": "Xizmatlar"
   },
   "works": {
     "title": "Ishlar",

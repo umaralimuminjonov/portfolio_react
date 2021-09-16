@@ -104,6 +104,7 @@
     transition: all 0.3s;
     overflow: hidden;
     text-overflow: ellipsis;
+    z-index: var(--z-tooltip);
   }
 }
 
